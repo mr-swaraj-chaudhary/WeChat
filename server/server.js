@@ -10,11 +10,11 @@ const online_users = {}
 io.on('connection', (socket) => {
     socket.on('new-user-joined', (name, time) => {
         online_users[socket.id] = name
-        socket.broadcast.emit('user-joined', name, time)
+        socket.broadcast.emit('user-joined', {name: name, time: time})
     })
 
     socket.on('send', (message, time) => {
-        socket.broadcast.emit('receive', online_users[socket.id], message, time)
+        socket.broadcast.emit('receive', online_users[socket.id], {message: message, time: time})
     })
 
     socket.on('disconnect', () => {
