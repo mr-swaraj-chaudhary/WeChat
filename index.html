@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeChat | Real Time Multi User Chat Application</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
-    <script src="js/client.js"></script>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
 </head>
 
 <body>
@@ -18,10 +18,10 @@
             <img src="./vendor/icon.png" id="icon" alt="" srcset="">
         </div>
         <div class="chat-section">
-            <div class="message left"></div>
-            <div class="message right"></div>
+            <div class="message left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</div>
+            <div class="message right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima dolor autem eligendi accusantium officiis earum culpa ex amet tempora.</div>
         </div>
-        <form class="message-section" action="#">
+        <form class="message-section" id="send-form" action="#">
             <input type="text" id="messageInput">
             <button type="submit" id="sendButton">Send</button>
         </form>
