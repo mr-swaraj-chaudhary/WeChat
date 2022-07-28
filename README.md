@@ -14,3 +14,7 @@ Real time multi user chat application developed using web sockets and socket.io 
 ## Socker.IO
 	event driven JS library for developing real time web application
 	https://socket.io/
+
+# UI Design
+
+<img src="./vendor/UI Design.png">
