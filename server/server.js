@@ -8,17 +8,18 @@ const io = require("socket.io")(8000, {
 const online_users = {}
 
 io.on('connection', (socket) => {
-    socket.on('new-user-joined', (name, time) => {
-        online_users[socket.id] = name
-        socket.broadcast.emit('user-joined', {name: name, time: time})
+    socket.on('new-user-joined', (data) => {
+        online_users[socket.id] = data.name
+        socket.broadcast.emit('user-joined', {name: data.name, time: data.time})
     })
 
-    socket.on('send', (message, time) => {
-        socket.broadcast.emit('receive', online_users[socket.id], {message: message, time: time})
+    socket.on('send', (data) => {
+        socket.broadcast.emit('receive', {name: online_users[socket.id], message: data.message, time: data.time})
     })
 
     socket.on('disconnect', () => {
-        socket.broadcast.emit('left', online_users[socket.id], new Date().toLocaleTimeString())
+        const time = new Date().toLocaleTimeString()
+        socket.broadcast.emit('left', {name: online_users[socket.id], time: time})
         delete online_users[socket.id]
     })
 })

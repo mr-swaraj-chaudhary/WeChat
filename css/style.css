@@ -49,7 +49,7 @@ html, body{
     border-radius: 10px;
     color: white;
     font-weight: bolder;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     margin-bottom: 10px;
 }
 
@@ -63,6 +63,11 @@ html, body{
     float: right;
     clear: both;
     background-color: #2980B9;
+}
+
+.time{
+    font-size:x-small;
+    padding-left: 10px;
 }
 
 .message-section{
