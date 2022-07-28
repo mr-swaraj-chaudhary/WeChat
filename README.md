@@ -18,3 +18,5 @@ Real time multi user chat application developed using web sockets and socket.io 
 # UI Design
 
 <img src="./vendor/UI Design.png">
+
+	Description of above image: Two instances of clients are served which are connected to one server instance and are efficiently able to communicate.
