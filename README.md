@@ -1,6 +1,10 @@
 # WeChat
 Real time multi user chat application developed using web sockets and socket.io library
 
+## Upcoming Updates
+	timestamp of messages
+	one-to-one encryption
+
 ## HTTP
 	one way communication at a time
 	client requests and then the server responds 
