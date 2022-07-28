@@ -22,6 +22,12 @@ one-to-one encryption
 
 # UI Design
 
-<img src="./vendor/UI Design.png">
+### User 1
+<img src="./vendor/User1.png">
+<hr>
+
+### User 2
+<img src="./vendor/User2.png">
+<hr>
 
 	Description of above image: Two instances of clients are served which are connected to one server instance and are efficiently able to communicate.
