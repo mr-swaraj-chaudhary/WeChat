@@ -1,9 +1,14 @@
 const socket = io('http://localhost:8000')
 
 let userName = prompt('Enter your name to connect to te server :')
+const title = document.getElementById('title')
 const chat = document.querySelector('.chat-section')
 const form = document.getElementById('send-form')
 const input = document.getElementById('messageInput')
+
+if (userName != null) {
+    title.innerText = userName
+}
 
 const createMessage = (message, position, time) => {
     const element = document.createElement('div')
@@ -14,7 +19,7 @@ const createMessage = (message, position, time) => {
 }
 
 let time = new Date().toLocaleTimeString()
-socket.emit('new-user-joined', {name: userName, time: time})
+socket.emit('new-user-joined', { name: userName, time: time })
 
 socket.on('user-joined', (data) => {
     createMessage(`${data.name} joined the chat`, 'left', data.time)
@@ -29,7 +34,7 @@ form.addEventListener('submit', (e) => {
     const message = input.value
     time = new Date().toLocaleTimeString()
     createMessage(`You: ${message}`, 'right', time)
-    socket.emit('send', {message: message, time: time})
+    socket.emit('send', { message: message, time: time })
     input.value = ""
 })
 
