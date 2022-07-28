@@ -1,0 +1,82 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: azure;
+}
+
+.container{
+    display: block;
+    margin: 50px auto auto auto;
+    width: 30vw;
+    height: 80vh;
+}
+
+.topbar{
+    background-color: #2980B9;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+#icon{
+    width: 40px;
+    height: 40px;
+}
+
+.title{
+    color: wheat;
+}
+
+.chat-section{
+    height: calc(80vh - 100px);
+    background-color: white;
+    padding: 20px 5px;
+}
+
+.message{
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.left{
+    float: left;
+    clear: both;
+    background-color: #7F8C8D;
+}
+
+.right{
+    float: right;
+    clear: both;
+    background-color: #2980B9;
+}
+
+.message-section{
+    height: 50px;   
+    display: flex;
+    justify-content: space-around;
+}
+
+#messageInput{
+    width: 75%;   
+    font-size: large;
+}
+
+#sendButton{
+    width: 20%;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
