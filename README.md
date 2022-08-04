@@ -1,5 +1,9 @@
 # WeChat
-Real time multi user chat application developed using web sockets and socket.io library
+Real time multi user chat application developed using web socket protocol and socket.io library
+
+## Prerequisites
+	A socket is an end-point in a multi way communication channel.
+	WS & WSS
 
 ## Upcoming Updates
 
