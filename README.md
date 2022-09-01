@@ -1,6 +1,21 @@
 # Project Objective
 Real time multi user chat application developed using sockets and web socket protocol
 
+## Folder Structure
+	Root 
+		client 
+			css/style.css
+			js/client.js
+			vendor/images
+			index.html
+		server
+			node_modules
+			package.json
+			package.lock.json
+			server.js
+		LICENCE
+		README.md
+
 ## Prerequisites
 	Socket, Web Socket and Web Socket Secure
 
