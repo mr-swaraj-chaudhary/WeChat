@@ -1,37 +1,21 @@
-# WeChat
-Real time multi user chat application developed using web socket protocol and socket.io library
+# Project Objective
+Real time multi user chat application developed using sockets and web socket protocol
 
 ## Prerequisites
-	A socket is an end-point in a multi way communication channel.
-	WS & WSS
+	Socket, Web Socket and Web Socket Secure
 
-## Upcoming Updates
+## Terminology
+	Socket : It is an end-point in a two way communication line between two programs within a network using a communication protocol
 
-<strike>timestamp of messages</strike> <br>
-one-to-one encryption
+	Web Socket Protocol : A communication protocol which allows multi way communication at the same time
 
-## HTTP
-	one way communication at a time
-	client requests and then the server responds 
-	HTTP & HTTPS
 
-## Web Sockets 
-	protocol that allows multiway communication simultaneously
-	clients and server both can push updates simultaneously that makes the web app quite efficient 
-	WS & WSS
+## Why I chose ws Protocol?
+
+## HTTP vs WS
+	1. HTTP allows one way communication at a time whereas WS allows multi way communication at a time
+	2. In HTTP, client-server architecuture is followed whereas In WS, clients and server both can push updates simultaneously that makes the web app faster and efficient
 
 ## Socker.IO
 	event driven JS library for developing real time web application
-	https://socket.io/
-
-# UI Design
-
-### User 1
-<img src="./vendor/User1.png">
-<hr>
-
-### User 2
-<img src="./vendor/User2.png">
-<hr>
-
-	Description of above image: Two instances of clients are served which are connected to one server instance and are efficiently able to communicate.
+	Refer here at : https://socket.io/
