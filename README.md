@@ -9,6 +9,11 @@ Real time multi user chat application developed using sockets and web socket pro
 
 	Web Socket Protocol : A communication protocol which allows multi way communication at the same time
 
+## Functions
+	socket.emit(event, data) : trigger server to initialize an event
+	socket.broadcast.emit(event, data) : trigger clients to initialize an event
+	socket.on(event, data) : listen to an event
+
 
 ## Why I chose ws Protocol?
 
